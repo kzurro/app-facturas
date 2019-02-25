@@ -1,0 +1,88 @@
+{
+  "facturas": [
+    {
+      "id": 1,
+      "numero": "A329",
+      "tipo": "ingreso",
+      "fecha": "13/02/2019",
+      "concepto": "Desarrollo API REST",
+      "cliente": {
+        "id": 12,
+        "nombre": "Egaresa"
+      },
+      "base": 1500,
+      "tipoIVA": 21,
+      "estado": "abonada"
+    },
+    {
+      "id": 2,
+      "numero": "7283",
+      "tipo": "gasto",
+      "fecha": "24/05/2019",
+      "concepto": "Optimización carga site principal",
+      "proveedor": {
+        "id": 2,
+        "nombre": "NavSystems"
+      },
+      "base": 850,
+      "tipoIVA": 21,
+      "estado": "pendiente"
+    },
+    {
+      "id": 3,
+      "numero": "S2019777",
+      "tipo": "gasto",
+      "fecha": "01/07/2019",
+      "concepto": "Campaña SEO",
+      "proveedor": {
+        "id": 3,
+        "nombre": "Tech Branding"
+      },
+      "base": 600,
+      "tipoIVA": 21,
+      "estado": "abonada"
+    },
+    {
+      "id": 4,
+      "numero": "S2019782",
+      "tipo": "gasto",
+      "fecha": "14/09/2019",
+      "concepto": "Campaña RRSS",
+      "proveedor": {
+        "id": 3,
+        "nombre": "Tech Branding"
+      },
+      "base": 450,
+      "tipoIVA": 21,
+      "estado": "pendiente"
+    },
+    {
+      "id": 5,
+      "numero": "A330",
+      "tipo": "ingreso",
+      "fecha": "18/02/2019",
+      "concepto": "Migración site",
+      "cliente": {
+        "id": 4,
+        "nombre": "AutoSky"
+      },
+      "base": 700,
+      "tipoIVA": 21,
+      "estado": "pendiente"
+    },
+    {
+      "id": 6,
+      "numero": "53",
+      "tipo": "gasto",
+      "fecha": "30/10/2019",
+      "concepto": "Taxi",
+      "proveedor": {
+        "id": 10,
+        "nombre": "Irene Gómez Hita"
+      },
+      "base": 38,
+      "tipoIVA": 10,
+      "estado": "abonada"
+    }
+  ]
+}

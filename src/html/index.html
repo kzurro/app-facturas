@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <title>Mis Facturas</title>
+</head>
+
+<body>
+  <section class="principal container-fluid">
+    <header class="cabecera row">
+      <h2 class="col">Gestión de facturas</h2>
+    </header>
+    <main>
+      <section>
+        <header>
+          <h3>Listado de facturas</h3>
+        </header>
+        <div class="row facturas">
+          <div class="info-listado info-listado-top col">
+            <span class="num-facturas"><strong>Total facturas</strong>: <span class="n-facturas">10</span></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col ingresos">
+            <h4>Ingresos</h4>
+            <span class="num-facturas"><strong>Total facturas de ingresos</strong>: <span
+                class="n-facturas">10</span></span>
+            <table class="listado table table-striped table-bordered table-hover">
+              <thead class="thead-light">
+                <tr>
+                  <th class="col-min">Num.</th>
+                  <th class="col-med">Fecha</th>
+                  <th class="col-concepto">Concepto</th>
+                  <th class="col-max">Cliente</th>
+                  <th class="col-med">Base</th>
+                  <th class="col-max">IVA</th>
+                  <th class="col-med">Total</th>
+                  <th class="col-med">Estado</th>
+                  <th class="col-min"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="factura-base">
+                  <td class="numero">1000</td>
+                  <td class="fecha">13/06/2018</td>
+                  <td class="concepto">App Angular</td>
+                  <td class="cliente-proveedor">Emasesa</td>
+                  <td class="base">3000€</td>
+                  <td><span class="iva">630€</span> (<span class="iva-porcentaje">21</span>%)</td>
+                  <td class="total">3630€</td>
+                  <td class="estado">Cobrada</td>
+                  <td class="acciones">
+                    <a href="#" class="imprimir">
+                      <i class="fa fa-print" title="imprimir"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1000</td>
+                  <td>13/06/2018</td>
+                  <td>App Angular</td>
+                  <td>Emasesa</td>
+                  <td>3000€</td>
+                  <td>630€ (21%)</td>
+                  <td>3630€</td>
+                  <td class="table-danger">Pendiente</td>
+                  <td class="acciones">
+                    <a href="#">
+                      <i class="fa fa-print" title="imprimir"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot class="totales">
+                <tr class="thead-light">
+                  <th colspan="4">Totales:</th>
+                  <td class="base">100€</td>
+                  <td class="iva">100€</td>
+                  <td class="total">100€</td>
+                  <td></td>
+                  <td></td>
+              </tfoot>
+            </table>
+          </div>
+          <div class="col gastos">
+            <h4>Gastos</h4>
+            <span class="num-facturas"><strong>Total facturas de gastos</strong>: <span
+                class="n-facturas">10</span></span>
+            <table class="listado table table-striped table-bordered table-hover">
+              <thead class="thead-light">
+                <tr>
+                  <th class="col-min">Num.</th>
+                  <th class="col-med">Fecha</th>
+                  <th class="col-concepto">Concepto</th>
+                  <th class="col-max">Proveedor</th>
+                  <th class="col-med">Base</th>
+                  <th class="col-max">IVA</th>
+                  <th class="col-med">Total</th>
+                  <th class="col-med">Estado</th>
+                  <th class="col-min"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1000</td>
+                  <td>13/06/2018</td>
+                  <td>App Angular</td>
+                  <td>Emasesa</td>
+                  <td>3000€</td>
+                  <td>630€ (21%)</td>
+                  <td>3630€</td>
+                  <td class="table-success">Cobrada</td>
+                  <td class="acciones">
+                    <a href="#">
+                      <i class="fa fa-print" title="imprimir"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1000</td>
+                  <td>13/06/2018</td>
+                  <td>App Angular</td>
+                  <td>Emasesa</td>
+                  <td>3000€</td>
+                  <td>630€ (21%)</td>
+                  <td>3630€</td>
+                  <td class="table-danger">Pendiente</td>
+                  <td class="acciones">
+                    <a href="#">
+                      <i class="fa fa-print" title="imprimir"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot class="totales">
+                <tr class="thead-light">
+                  <th colspan="4">Totales:</th>
+                  <td class="base">100€</td>
+                  <td class="iva">100€</td>
+                  <td class="total">100€</td>
+                  <td></td>
+                  <td></td>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="estadisticas">
+        <header>
+          <h3>Estadísticas</h3>
+        </header>
+        <div class="row">
+          <div class="col estadisticas-ingresos">
+            <div class="card">
+              <div class="card-header">
+                Ingresos
+              </div>
+              <div class="card-body">
+                <p>Pendiente de cobrar (sin impuestos): <span class="pendiente">1000€</span></p>
+                <p>Facturas con IVA general (21%): <span class="n-facturas-general">1</span></p>
+                <p>Facturas con IVA reducido (10%): <span class="n-facturas-reducido">5</span></p>
+                <p>Facturas con IVA superreducido (4%): <span class="n-facturas-superreducido">1</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col estadisticas-gastos">
+            <div class="card">
+              <div class="card-header">
+                Gastos
+              </div>
+              <div class="card-body">
+                <p>Pendiente de pagar (sin impuestos): <span class="pendiente">1000€</span></p>
+                <p>Facturas con IVA general (21%): <span class="n-facturas-general">1</span></p>
+                <p>Facturas con IVA reducido (10%): <span class="n-facturas-reducido">5</span></p>
+                <p>Facturas con IVA superreducido (4%): <span class="n-facturas-superreducido">1</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col general">
+            <div class="card">
+              <div class="card-header">
+                General
+              </div>
+              <div class="card-body">
+                <p>Balance (sin impuestos): <span class="balance">300€</span></p>
+                <p>Factura más cara (sin impuestos): <span class="factura-cara">A111</span></p>
+                <p>Factura más barata (sin impuestos): <span class="factura-barata">A111</span></p>
+                <p>Facturas emitidas en este mes: <span class="n-facturas-mes">1</span></p>
+                <p>Facturas imprimidas en la sesión actual: <span class="impresiones">4</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                Clientes y proveedores
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled clientes-proveedores">
+                  <li class="cliente-proveedor-base"><span class="cliente-proveedor-nombre">Emipress</span>
+                    (<span class="cliente-proveedor-n-facturas">3</span> facturas)</li>
+                  <li>López Cerezo S.L. (3 facturas)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </section>
+  <div class="lightbox">
+    <div class="lightbox-fondo"></div>
+    <div class="lightbox-contenido"></div>
+  </div>
+</body>
+
+</html>

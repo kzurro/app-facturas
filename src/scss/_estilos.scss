@@ -1,0 +1,153 @@
+body {
+    background-color: #f1f2f7;
+    font-family: 'Open Sans', sans-serif;
+}
+a, a:hover {
+    color: inherit;
+}
+.principal {
+    padding-bottom: 15px;
+}
+.cabecera {
+    background-color: #fff;
+    padding-top: 15px;
+}
+.cabecera h2 {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+.cabecera .logout i {
+    font-size: 24px;
+    line-height: 1.7;
+}
+main {
+    padding: 15px;
+    position: relative;
+}
+main.msj-padding {
+    padding-top: 76px;
+}
+main .alert {
+    position: absolute;
+    font-size: 14px;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+}
+.num-facturas {
+    font-size: 14px;
+}
+.info-listado-top {
+    margin-bottom: 1rem;
+}
+.info-listado {
+    font-size: 14px;
+}
+.info-listado select {
+    display: inline-block;
+    width: 50px;
+}
+.info-listado input {
+    display: inline-block;
+    width: auto;
+}
+.info-listado label {
+    white-space: nowrap;
+}
+.pagination {
+    font-size: 14px;
+}
+.page-link, .page-link:hover {
+    color: inherit;
+}
+.page-item.active .page-link {
+    background-color: #272c33;
+    border-color: #272c33;
+}
+.page-item.disabled .page-link {
+    color: #868e96;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+.listado, .estadisticas {
+    font-size: 14px;
+}
+.listado .col-min {
+    width: 30px;
+}
+.listado .col-med {
+    width: 80px;
+}
+.listado .col-max {
+    width: 120px;
+}
+.listado .acciones {
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.form-no-input {
+    line-height: 2.3;
+}
+.form-group {
+    position: relative;
+}
+.col-euro input {
+    width: calc(100% - 11px);
+}
+.col-euro .euro {
+    position: absolute;
+    right: 5px;
+    bottom: 7px;
+}
+button[type="submit"] {
+    background-color: #272c33;
+    color: #fff;
+    margin-top: 30px;
+}
+.card {
+    margin-bottom: 20px;
+}
+.balance-positivo {
+    color: #060;
+}
+.balance-negativo {
+    color: #f00;
+}
+.lightbox, .lightbox-fondo {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.lightbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+.lightbox.on {
+  opacity: 1;
+  visibility: visible;
+}
+.lightbox-fondo {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+}
+.lightbox-contenido {
+  border-radius: 5px;
+  background-color: #fff;
+  position: relative;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
